@@ -1,0 +1,78 @@
+:root {
+  --font-color: #efebe9;
+  --button-color: #fffde7;
+  --background-color: #bdb9b7;
+
+  --super-size: 70px;
+  --big-size: 40px;
+  --mid-size: 25px;
+  --small-size: 10px;
+  --micro-size: 5px;
+}
+
+body {
+  color: var(--font-color);
+  padding: var(--super-size);
+}
+
+.form,
+.greeting {
+  display: none;
+}
+
+.showing,
+.JS-toDoForm {
+  display: flex;
+  justify-content: center;
+  padding: var(--micro-size);
+  block-size: var(--mid-size);
+  font-size: var(--super-size);
+}
+
+.JS-toDoList {
+  padding: 0;
+}
+
+.JS-toDoList li {
+  display: flex;
+  justify-content: center;
+  padding-bottom: var(--small-size);
+  list-style: none;
+}
+
+.JS-toDoList button {
+  border-style: none;
+  border-radius: 10px;
+  background-color: var(--button-color);
+}
+
+.js-weather {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-size: var(--micro-size);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.JS-clock h1 {
+  display: flex;
+  justify-content: center;
+}
